@@ -1,0 +1,15 @@
+# ignore .env file
+/.env
+
+# ignore composer vendor folder
+/vendor/
+
+# ignore system poop and prefs
+.DS_Store
+.idea/
+
+# ignore silverstripe resources and assets
+/resources/
+/assets/
+/gridfieldextensions/
+/googlesitemaps/

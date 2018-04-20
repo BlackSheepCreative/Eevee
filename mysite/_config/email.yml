@@ -1,0 +1,17 @@
+---
+Name: myemailconfig
+After:
+  - '#emailconfig'
+---
+SilverStripe\Control\Email\Email:
+  admin_email: username
+
+SilverStripe\Core\Injector\Injector:
+  Swift_Transport:
+    class: Swift_SmtpTransport
+    properties:
+      Host: localhost
+      Encryption: tls
+    calls:
+      Username: [ setUsername, ['username'] ]
+      Password: [ setPassword, ['password'] ]

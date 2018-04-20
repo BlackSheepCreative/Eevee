@@ -1,0 +1,29 @@
+---
+Name: mysite
+Before:
+  - coreconfig
+---
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - SiteConfigExtension
+  
+SilverStripe\Assets\File:
+  allowed_extensions:
+    - svg
+SilverStripe\Assets\Image:
+  allowed_extensions:
+    - svg
+
+SilverStripe\ErrorPage\ErrorPage:
+  icon: "mysite/images/icons/error.svg"
+SilverStripe\CMS\Model\RedirectorPage:
+  icon: "mysite/images/icons/redirects.svg"
+SilverStripe\CMS\Model\VirtualPage:
+  icon: "mysite/images/icons/virtual.svg"
+
+---
+Only:
+    environment: 'dev'
+---
+SilverLeague\IDEAnnotator\DataObjectAnnotator:
+    enabled: true
