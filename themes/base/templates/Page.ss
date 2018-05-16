@@ -89,6 +89,6 @@
 
     <% include Footer %>
 
-    <% include Page_Scripts %>
+    <% require themedJavascript('dist/app') %>
 </body>
 </html>

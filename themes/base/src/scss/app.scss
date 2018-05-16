@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 // Normalize default styles and browser inconsistencies. see https://github.com/JohnAlbin/normalize-scss
-@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "~normalize-scss/sass/normalize/import-now";
 
-// Import Bourbon & Bitters
-// https://github.com/thoughtbot/bitters
-@import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+// Tasty Hamburgers @link https://github.com/jonsuh/hamburgers
+@import 'vendor/hamburgers';
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+// Import Bourbon & Bitters https://github.com/thoughtbot/bitters
+@import '~bourbon/core/bourbon';
 @import "base/base";
 
 @import 'mixins/mixins';
