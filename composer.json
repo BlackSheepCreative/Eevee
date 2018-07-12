@@ -20,6 +20,15 @@
             "php": "7.0.15"
         }
     },
+    "autoload": {
+        "psr-4": {
+            "Keppler\\Site\\": "app/src/"
+        },
+        "classmap": [
+            "app/src/pages/Page.php",
+            "app/src/controllers/PageController.php"
+        ]
+    },
     "prefer-stable": true,
     "minimum-stability": "dev",
     "extra": {

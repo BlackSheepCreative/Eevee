@@ -28,7 +28,22 @@ textarea {
   font-size: 16px;
 }
 
-#{$all-text-inputs} {
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+input:not([type]),
+textarea {
   appearance: none;
   background-color: $base-background-color;
   border: $base-border;

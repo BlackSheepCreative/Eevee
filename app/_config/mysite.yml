@@ -2,7 +2,7 @@
 Name: myproject
 ---
 SilverStripe\Core\Manifest\ModuleManifest:
-  project: mysite
+  project: app
 
 SilverStripe\Core\Injector\Injector:
   SilverStripe\View\Requirements_Backend:
