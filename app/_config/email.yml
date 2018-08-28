@@ -10,7 +10,7 @@ SilverStripe\Core\Injector\Injector:
   Swift_Transport:
     class: Swift_SmtpTransport
     properties:
-      Host: localhost
+      Host: mail.enlightenhosting.com
       Encryption: tls
     calls:
       Username: [ setUsername, ['username'] ]
