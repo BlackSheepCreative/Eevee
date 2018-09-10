@@ -8,8 +8,8 @@ Silverstripe\SiteConfig\SiteConfig:
     - SiteConfigExtension
   
 SilverStripe\Assets\File:
-  allowed_extensions:
-    - svg
+  allowed_extensions: [svg, js]
+  
 SilverStripe\Assets\Image:
   allowed_extensions:
     - svg
